@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jxx.cc最新 - 视频品牌_原创影像内容生态</title>
+<meta name="description" content="jxx.cc最新官方网站，专注原创视频内容与创作者社区，深耕影像内容生态，为用户与创作者提供值得信赖的高品质视频品牌平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2b3d'/%3E%3Cpath d='M24 20l20 12-20 12z' fill='%23ffcc4d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jxx-deep:#0f2b3d;
+  --jxx-deep2:#153a52;
+  --jxx-amber:#ffcc4d;
+  --jxx-amber2:#f5a623;
+  --jxx-paper:#f4f7f9;
+  --jxx-ink:#1b2a34;
+  --jxx-mut:#5c7182;
+  --jxx-line:#dde6ec;
+  --jxx-white:#ffffff;
+  --jxx-radius:14px;
+  --jxx-shadow:0 10px 30px rgba(15,43,61,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:130px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:var(--jxx-paper);color:var(--jxx-ink);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.jxx-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ===== 吸顶区：公告条 + 页头 ===== */
+.jxx-sticky{position:sticky;top:0;z-index:90}
+.jxx-notice{
+  background:linear-gradient(90deg,var(--jxx-deep) 0%,var(--jxx-deep2) 100%);
+  color:#dbe7ef;font-size:13px;
+}
+.jxx-notice-inner{display:flex;align-items:center;gap:12px;padding:9px 0;flex-wrap:wrap}
+.jxx-notice-tag{
+  background:var(--jxx-amber);color:#3a2a00;font-weight:700;
+  font-size:11.5px;letter-spacing:.5px;padding:2px 9px;border-radius:20px;flex:none;
+}
+.jxx-notice-list{display:flex;gap:22px;overflow:hidden;flex:1;min-width:0}
+.jxx-notice-item{white-space:nowrap;opacity:.92;overflow:hidden;text-overflow:ellipsis}
+.jxx-notice-item b{color:var(--jxx-amber);font-weight:600}
+.jxx-notice-more{color:var(--jxx-amber);font-size:12.5px;flex:none;white-space:nowrap}
+
+.jxx-header{
+  background:rgba(255,255,255,.96);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--jxx-line);
+}
+.jxx-header-inner{display:flex;align-items:center;gap:28px;height:72px}
+.jxx-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.4px;color:var(--jxx-deep);flex:none}
+.jxx-logo-mark{
+  width:38px;height:38px;border-radius:11px;background:var(--jxx-deep);
+  display:grid;place-items:center;flex:none;
+}
+.jxx-logo-mark svg{width:20px;height:20px}
+.jxx-logo span small{display:block;font-size:10px;font-weight:500;color:var(--jxx-mut);letter-spacing:2px;line-height:1}
+.jxx-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.jxx-nav a{
+  font-size:14.5px;color:var(--jxx-ink);padding:8px 13px;border-radius:9px;
+  transition:.2s;white-space:nowrap;
+}
+.jxx-nav a:hover{background:#eef4f8;color:var(--jxx-deep);font-weight:600}
+.jxx-header-tools{display:flex;align-items:center;gap:12px;flex:none}
+.jxx-search{position:relative;display:flex;align-items:center}
+.jxx-search input{
+  width:196px;height:38px;border:1px solid var(--jxx-line);border-radius:30px;
+  padding:0 40px 0 16px;font-size:13.5px;background:#f7fafc;outline:none;transition:.2s;
+}
+.jxx-search input:focus{border-color:var(--jxx-amber2);background:#fff;box-shadow:0 0 0 3px rgba(245,166,35,.16)}
+.jxx-search button{
+  position:absolute;right:6px;width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;background:var(--jxx-deep);color:var(--jxx-amber);
+}
+.jxx-search button svg{width:14px;height:14px}
+.jxx-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  height:38px;padding:0 20px;border-radius:30px;font-size:14px;font-weight:600;
+  transition:.2s;white-space:nowrap;
+}
+.jxx-btn-primary{background:var(--jxx-deep);color:#fff}
+.jxx-btn-primary:hover{background:var(--jxx-deep2);transform:translateY(-1px)}
+.jxx-btn-amber{background:var(--jxx-amber);color:#3a2a00}
+.jxx-btn-amber:hover{background:var(--jxx-amber2);transform:translateY(-1px)}
+.jxx-btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.jxx-btn-ghost:hover{background:rgba(255,255,255,.14)}
+.jxx-burger{display:none;width:40px;height:40px;border-radius:10px;background:#eef4f8;place-items:center}
+.jxx-burger svg{width:20px;height:20px}
+
+.jxx-search-feedback{
+  position:absolute;top:46px;right:0;width:270px;background:#fff;border-radius:12px;
+  box-shadow:var(--jxx-shadow);padding:12px 14px;font-size:13px;color:var(--jxx-mut);
+  display:none;z-index:120;border:1px solid var(--jxx-line);
+}
+.jxx-search-feedback.on{display:block}
+.jxx-search-feedback strong{color:var(--jxx-deep)}
+
+/* ===== 首屏 ===== */
+.jxx-hero{position:relative;background:var(--jxx-deep);color:#fff;overflow:hidden}
+.jxx-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(255,204,77,.22),transparent 46%),
+    radial-gradient(circle at 10% 92%,rgba(76,168,214,.20),transparent 50%);
+}
+.jxx-hero-inner{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;padding:64px 0 70px}
+.jxx-hero-copy .jxx-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+  color:var(--jxx-amber);border:1px solid rgba(255,204,77,.42);padding:5px 14px;border-radius:30px;margin-bottom:22px;
+}
+.jxx-hero-copy h1{font-size:46px;line-height:1.18;letter-spacing:1px;font-weight:800}
+.jxx-hero-copy h1 em{font-style:normal;color:var(--jxx-amber)}
+.jxx-hero-sub{margin-top:16px;font-size:16.5px;color:#c6d7e2;max-width:520px}
+.jxx-hero-desc{margin-top:18px;font-size:14.5px;color:#9fb6c6;max-width:540px}
+.jxx-hero-actions{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.jxx-hero-stats{display:flex;gap:38px;margin-top:38px;flex-wrap:wrap}
+.jxx-hero-stat b{display:block;font-size:27px;color:var(--jxx-amber);font-weight:800;line-height:1.2}
+.jxx-hero-stat span{font-size:12.5px;color:#9fb6c6;letter-spacing:1px}
+.jxx-hero-visual{position:relative}
+.jxx-hero-frame{
+  border-radius:20px;overflow:hidden;box-shadow:0 26px 60px rgba(0,0,0,.42);
+  border:1px solid rgba(255,255,255,.12);position:relative;
+}
+.jxx-hero-frame svg{display:block;width:100%;height:auto}
+.jxx-hero-float{
+  position:absolute;left:-22px;bottom:-24px;background:#fff;color:var(--jxx-ink);
+  border-radius:14px;padding:12px 18px;box-shadow:var(--jxx-shadow);font-size:13px;display:flex;gap:10px;align-items:center;
+}
+.jxx-hero-float b{color:var(--jxx-deep);font-size:16px}
+.jxx-hero-float .jxx-pulse{
+  width:9px;height:9px;border-radius:50%;background:#2ec27e;box-shadow:0 0 0 4px rgba(46,194,126,.2);
+}
+
+/* ===== 通用区块 ===== */
+.jxx-section{padding:66px 0}
+.jxx-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+.jxx-section-head h2{font-size:29px;letter-spacing:.5px;color:var(--jxx-deep)}
+.jxx-section-head h2 small{display:block;font-size:12px;letter-spacing:3px;color:var(--jxx-amber2);font-weight:700;margin-bottom:6px}
+.jxx-section-head p{font-size:14px;color:var(--jxx-mut);max-width:560px}
+.jxx-link-more{font-size:13.5px;color:var(--jxx-deep);font-weight:600;display:inline-flex;align-items:center;gap:6px}
+.jxx-link-more:hover{color:var(--jxx-amber2)}
+
+/* 关键词解析长文 */
+.jxx-about{background:#fff;border-top:1px solid var(--jxx-line);border-bottom:1px solid var(--jxx-line)}
+.jxx-about-grid{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start}
+.jxx-about-aside{position:sticky;top:150px}
+.jxx-about-aside h2{font-size:25px;color:var(--jxx-deep);line-height:1.4}
+.jxx-about-aside h2 small{display:block;font-size:12px;letter-spacing:3px;color:var(--jxx-amber2);font-weight:700;margin-bottom:8px}
+.jxx-about-aside .jxx-rule{width:52px;height:4px;background:var(--jxx-amber);border-radius:4px;margin:18px 0}
+.jxx-about-aside p{font-size:13.5px;color:var(--jxx-mut)}
+.jxx-about-body p{font-size:15px;color:#33475a;margin-bottom:16px;text-align:justify}
+.jxx-about-body h3{font-size:17.5px;color:var(--jxx-deep);margin:26px 0 10px;display:flex;align-items:center;gap:9px}
+.jxx-about-body h3::before{content:"";width:6px;height:18px;border-radius:3px;background:var(--jxx-amber2)}
+.jxx-about-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}
+.jxx-about-tags span{
+  font-size:12.5px;background:#eef4f8;color:var(--jxx-deep);padding:6px 14px;border-radius:30px;
+}
+
+/* ===== 焦点内容 ===== */
+.jxx-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:24px}
+.jxx-card{
+  background:#fff;border-radius:var(--jxx-radius);overflow:hidden;
+  box-shadow:0 4px 16px rgba(15,43,61,.06);transition:.28s;border:1px solid #eaf1f5;
+}
+.jxx-card:hover{transform:translateY(-5px);box-shadow:var(--jxx-shadow)}
+.jxx-thumb{position:relative;overflow:hidden;background:#dfe9ef}
+.jxx-thumb svg{display:block;width:100%;height:auto}
+.jxx-thumb .jxx-badge{
+  position:absolute;left:12px;top:12px;background:rgba(15,43,61,.82);color:#fff;
+  font-size:11.5px;padding:3px 11px;border-radius:20px;letter-spacing:.5px;
+}
+.jxx-thumb .jxx-badge-amber{background:var(--jxx-amber);color:#3a2a00;font-weight:700}
+.jxx-thumb .jxx-play{
+  position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:.28s;
+  background:rgba(15,43,61,.28);
+}
+.jxx-card:hover .jxx-play{opacity:1}
+.jxx-play-btn{
+  width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.94);
+  display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.3);
+}
+.jxx-play-btn svg{width:19px;height:19px;margin-left:3px}
+.jxx-card-body{padding:16px 18px 18px}
+.jxx-card-body h3{font-size:16.5px;color:var(--jxx-deep);line-height:1.5;margin-bottom:7px}
+.jxx-card-body p{font-size:13.5px;color:var(--jxx-mut);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.jxx-card-meta{display:flex;align-items:center;gap:9px;margin-top:13px;font-size:12.5px;color:var(--jxx-mut);flex-wrap:wrap}
+.jxx-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-size:11.5px;font-weight:700;flex:none;
+}
+.jxx-card-meta .jxx-dot{width:3px;height:3px;background:#c2d0d9;border-radius:50%}
+.jxx-card-actions{display:flex;gap:8px;margin-top:14px;padding-top:13px;border-top:1px dashed #e3ecf2}
+.jxx-chip-btn{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--jxx-mut);
+  padding:5px 12px;border-radius:20px;background:#f2f7fa;transition:.2s;
+}
+.jxx-chip-btn:hover{background:#e6eff4;color:var(--jxx-deep)}
+.jxx-chip-btn.liked{color:#e4553d;background:#fdeeea}
+.jxx-chip-btn.saved{color:var(--jxx-amber2);background:#fff6e2}
+.jxx-chip-btn svg{width:14px;height:14px}
+
+.jxx-focus-side{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.jxx-focus-side .jxx-card-body h3{font-size:14.5px}
+.jxx-focus-side .jxx-card-body p{font-size:12.5px}
+
+/* ===== 热门视频流 ===== */
+.jxx-stream-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jxx-filter-bar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.jxx-filter{
+  font-size:13px;padding:7px 17px;border-radius:30px;background:#fff;color:var(--jxx-mut);
+  border:1px solid var(--jxx-line);transition:.2s;
+}
+.jxx-filter:hover{border-color:var(--jxx-amber2);color:var(--jxx-deep)}
+.jxx-filter.active{background:var(--jxx-deep);color:#fff;border-color:var(--jxx-deep)}
+
+/* ===== 专题 ===== */
+.jxx-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.jxx-topic{
+  background:#fff;border-radius:var(--jxx-radius);overflow:hidden;border:1px solid #eaf1f5;
+  transition:.28s;box-shadow:0 4px 16px rgba(15,43,61,.05);display:flex;flex-direction:column;
+}
+.jxx-topic:hover{transform:translateY(-5px);box-shadow:var(--jxx-shadow)}
+.jxx-topic-cover{position:relative;overflow:hidden}
+.jxx-topic-cover svg{display:block;width:100%;height:auto}
+.jxx-topic-status{
+  position:absolute;right:11px;top:11px;font-size:11px;padding:3px 10px;border-radius:20px;
+  background:rgba(255,255,255,.92);color:var(--jxx-deep);font-weight:600;
+}
+.jxx-topic-status.live{background:#2ec27e;color:#fff}
+.jxx-topic-body{padding:15px 17px 17px;flex:1;display:flex;flex-direction:column}
+.jxx-topic-body h3{font-size:15.5px;color:var(--jxx-deep);margin-bottom:7px}
+.jxx-topic-body p{font-size:12.8px;color:var(--jxx-mut);flex:1}
+.jxx-topic-foot{font-size:12px;color:var(--jxx-amber2);font-weight:600;margin-top:11px;letter-spacing:.4px}
+
+/* ===== 创作者矩阵 ===== */
+.jxx-creators{background:linear-gradient(180deg,#0f2b3d 0%,#123449 100%);color:#fff}
+.jxx-creators .jxx-section-head h2{color:#fff}
+.jxx-creators .jxx-section-head p{color:#a9bfcd}
+.jxx-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.jxx-creator{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--jxx-radius);padding:22px 20px;transition:.28s;
+}
+.jxx-creator:hover{background:rgba(255,255,255,.1);transform:translateY(-5px)}
+.jxx-creator-top{display:flex;align-items:center;gap:13px;margin-bottom:14px}
+.jxx-creator-avatar{
+  width:52px;height:52px;border-radius:16px;display:grid;place-items:center;
+  font-size:20px;font-weight:800;color:#fff;flex:none;
+}
+.jxx-creator-top h3{font-size:16px;color:#fff}
+.jxx-creator-top span{font-size:12px;color:var(--jxx-amber)}
+.jxx-creator p{font-size:12.8px;color:#a9bfcd;min-height:58px}
+.jxx-creator-stats{display:flex;gap:18px;margin-top:14px;padding-top:13px;border-top:1px solid rgba(255,255,255,.1)}
+.jxx-creator-stats b{display:block;font-size:15px;color:#fff}
+.jxx-creator-stats span{font-size:11px;color:#8fa8b8}
+.jxx-creator-btn{
+  margin-top:15px;width:100%;height:34px;border-radius:9px;font-size:12.8px;font-weight:600;
+  background:rgba(255,204,77,.14);color:var(--jxx-amber);transition:.2s;
+}
+.jxx-creator-btn:hover{background:var(--jxx-amber);color:#3a2a00}
+
+/* ===== 评价 ===== */
+.jxx-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.jxx-review{
+  background:#fff;border-radius:var(--jxx-radius);padding:22px 22px 18px;border:1px solid #eaf1f5;
+  box-shadow:0 4px 16px rgba(15,43,61,.05);position:relative;
+}
+.jxx-review::before{
+  content:"“";position:absolute;right:22px;top:8px;font-size:52px;color:#eaf1f5;font-family:Georgia,serif;line-height:1;
+}
+.jxx-review-stars{color:var(--jxx-amber2);font-size:13px;letter-spacing:2px;margin-bottom:10px}
+.jxx-review p{font-size:13.8px;color:#33475a;position:relative;z-index:1}
+.jxx-review-foot{display:flex;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px dashed #e3ecf2}
+.jxx-review-foot h4{font-size:13px;color:var(--jxx-deep)}
+.jxx-review-foot span{font-size:11.5px;color:var(--jxx-mut);display:block}
+
+/* ===== 动态 + FAQ ===== */
+.jxx-bottom-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:start}
+.jxx-timeline{position:relative;padding-left:24px}
+.jxx-timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:#e3ecf2}
+.jxx-timeline-item{position:relative;padding-bottom:22px}
+.jxx-timeline-item::before{
+  content:"";position:absolute;left:-23px;top:7px;width:10px;height:10px;border-radius:50%;
+  background:var(--jxx-amber);box-shadow:0 0 0 4px #fff,0 0 0 5px #f0e3bf;
+}
+.jxx-timeline-item time{font-size:12px;color:var(--jxx-amber2);font-weight:700;letter-spacing:.5px}
+.jxx-timeline-item h3{font-size:15px;color:var(--jxx-deep);margin:4px 0 5px}
+.jxx-timeline-item p{font-size:13px;color:var(--jxx-mut)}
+
+.jxx-faq-item{
+  background:#fff;border:1px solid #eaf1f5;border-radius:11px;margin-bottom:11px;overflow:hidden;transition:.2s;
+}
+.jxx-faq-item[open]{border-color:#f5d79a;box-shadow:0 6px 18px rgba(245,166,35,.1)}
+.jxx-faq-item summary{
+  list-style:none;cursor:pointer;padding:15px 18px;font-size:14.5px;font-weight:600;color:var(--jxx-deep);
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.jxx-faq-item summary::-webkit-details-marker{display:none}
+.jxx-faq-item summary::after{
+  content:"+";font-size:19px;color:var(--jxx-amber2);font-weight:400;transition:.2s;flex:none;
+}
+.jxx-faq-item[open] summary::after{content:"−"}
+.jxx-faq-item .jxx-faq-body{padding:0 18px 16px;font-size:13.5px;color:var(--jxx-mut)}
+
+/* ===== 合作 + 投稿 ===== */
+.jxx-partner-row{display:flex;flex-wrap:wrap;gap:14px}
+.jxx-partner{
+  flex:1 1 160px;background:#fff;border:1px solid #eaf1f5;border-radius:12px;
+  padding:18px 16px;text-align:center;font-size:13.5px;font-weight:600;color:var(--jxx-deep);
+  transition:.2s;
+}
+.jxx-partner:hover{border-color:var(--jxx-amber2);transform:translateY(-3px);box-shadow:0 8px 20px rgba(15,43,61,.07)}
+.jxx-partner small{display:block;font-weight:400;font-size:11.5px;color:var(--jxx-mut);margin-top:4px}
+
+.jxx-cta-band{
+  background:linear-gradient(120deg,var(--jxx-deep) 0%,#1d4c6b 60%,#266a8e 100%);
+  border-radius:22px;padding:42px 44px;color:#fff;display:flex;align-items:center;
+  justify-content:space-between;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden;
+}
+.jxx-cta-band::after{
+  content:"";position:absolute;right:-60px;top:-70px;width:250px;height:250px;border-radius:50%;
+  background:rgba(255,204,77,.13);
+}
+.jxx-cta-band h2{font-size:25px;margin-bottom:8px;position:relative;z-index:1}
+.jxx-cta-band p{font-size:14px;color:#bcd2df;max-width:560px;position:relative;z-index:1}
+.jxx-cta-actions{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:1}
+
+/* ===== 页脚 ===== */
+.jxx-footer{background:#0b2231;color:#8ba3b4;padding:52px 0 0;margin-top:66px}
+.jxx-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:36px}
+.jxx-footer h4{color:#fff;font-size:15px;margin-bottom:15px}
+.jxx-footer-logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:19px;margin-bottom:13px}
+.jxx-footer p{font-size:13px;line-height:1.9}
+.jxx-footer ul{list-style:none}
+.jxx-footer li{font-size:13px;margin-bottom:9px}
+.jxx-footer li a:hover{color:var(--jxx-amber)}
+.jxx-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.09);padding:20px 0;font-size:12.5px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* ===== 弹窗 & Toast ===== */
+.jxx-modal-mask{
+  position:fixed;inset:0;background:rgba(11,34,49,.55);z-index:200;
+  display:none;place-items:center;padding:20px;backdrop-filter:blur(3px);
+}
+.jxx-modal-mask.on{display:grid}
+.jxx-modal{
+  background:#fff;border-radius:18px;max-width:480px;width:100%;padding:28px 28px 24px;
+  box-shadow:0 30px 70px rgba(0,0,0,.3);animation:jxxPop .25s ease;
+}
+@keyframes jxxPop{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+.jxx-modal h3{font-size:19px;color:var(--jxx-deep);margin-bottom:10px}
+.jxx-modal p{font-size:13.5px;color:var(--jxx-mut);margin-bottom:16px}
+.jxx-modal .jxx-input{
+  width:100%;border:1px solid var(--jxx-line);border-radius:10px;padding:11px 14px;
+  font-size:13.5px;outline:none;margin-bottom:12px;font-family:inherit;resize:vertical;
+}
+.jxx-modal .jxx-input:focus{border-color:var(--jxx-amber2);box-shadow:0 0 0 3px rgba(245,166,35,.15)}
+.jxx-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.jxx-modal-actions .jxx-btn{height:36px;padding:0 18px;font-size:13px}
+.jxx-toast{
+  position:fixed;left:50%;bottom:44px;transform:translate(-50%,20px);
+  background:var(--jxx-deep);color:#fff;font-size:13.5px;padding:11px 22px;border-radius:30px;
+  box-shadow:0 14px 34px rgba(0,0,0,.26);opacity:0;pointer-events:none;transition:.3s;z-index:300;
+}
+.jxx-toast.on{opacity:1;transform:translate(-50%,0)}
+.jxx-top-btn{
+  position:fixed;right:24px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--jxx-deep);color:var(--jxx-amber);display:grid;place-items:center;
+  box-shadow:0 10px 26px rgba(15,43,61,.3);opacity:0;pointer-events:none;transition:.28s;z-index:150;
+}
+.jxx-top-btn.on{opacity:1;pointer-events:auto}
+.jxx-top-btn:hover{background:var(--jxx-deep2);transform:translateY(-3px)}
+.jxx-top-btn svg{width:18px;height:18px}
+
+/* ===== 响应式 ===== */
+@media(max-width:1050px){
+  .jxx-hero-inner{grid-template-columns:1fr;gap:38px;padding:48px 0 54px}
+  .jxx-hero-copy h1{font-size:38px}
+  .jxx-about-grid{grid-template-columns:1fr;gap:26px}
+  .jxx-about-aside{position:static}
+  .jxx-focus-grid{grid-template-columns:1fr}
+  .jxx-stream-grid{grid-template-columns:repeat(2,1fr)}
+  .jxx-topic-grid{grid-template-columns:repeat(2,1fr)}
+  .jxx-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .jxx-review-grid{grid-template-columns:repeat(2,1fr)}
+  .jxx-bottom-grid{grid-template-columns:1fr}
+  .jxx-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .jxx-wrap{padding:0 16px}
+  .jxx-header-inner{height:62px;gap:12px}
+  .jxx-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#fff;
+    flex-direction:column;padding:15px 18px 20px;gap:3px;box-shadow:0 18px 32px rgba(15,43,61,.13);
+    border-bottom:1px solid var(--jxx-line);
+  }
+  .jxx-nav.open{display:flex}
+  .jxx-nav a{padding:11px 12px}
+  .jxx-burger{display:grid}
+  .jxx-search input{width:120px}
+  .jxx-header-tools .jxx-btn-primary{display:none}
+  .jxx-notice-list{gap:16px}
+  .jxx-hero-copy h1{font-size:31px}
+  .jxx-hero-stats{gap:24px}
+  .jxx-hero-float{left:10px;bottom:-18px;font-size:12px;padding:10px 14px}
+  .jxx-section{padding:48px 0}
+  .jxx-section-head h2{font-size:23px}
+  .jxx-stream-grid,.jxx-topic-grid,.jxx-creator-grid,.jxx-review-grid,.jxx-focus-side{grid-template-columns:1fr}
+  .jxx-cta-band{padding:30px 24px;border-radius:16px}
+  .jxx-cta-band h2{font-size:21px}
+  .jxx-footer-grid{grid-template-columns:1fr;gap:26px}
+  .jxx-top-btn{right:14px;bottom:16px}
+  html{scroll-padding-top:112px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告 + 页头 -->
+<div class="jxx-sticky">
+  <div class="jxx-notice">
+    <div class="jxx-wrap jxx-notice-inner">
+      <span class="jxx-notice-tag">官方发布</span>
+      <div class="jxx-notice-list">
+        <span class="jxx-notice-item"><b>11-19</b> 冬季影像企划《城市暖流》征集中，面向全部创作者开放报名</span>
+        <span class="jxx-notice-item"><b>11-17</b> 创作者扶持计划第三期上线，新增剪辑教程与选题攻略</span>
+        <span class="jxx-notice-item"><b>11-14</b> 品牌短片《手作的力量》官方正版高清版正式上线</span>
+      </div>
+      <a class="jxx-notice-more" href="#jxx-news">全部动态 →</a>
+    </div>
+  </div>
+  <header class="jxx-header">
+    <div class="jxx-wrap jxx-header-inner">
+      <a class="jxx-logo" href="#jxx-top">
+        <span class="jxx-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7z" fill="#ffcc4d"/></svg>
+        </span>
+        <span>jxx.cc最新<small>VIDEO BRAND</small></span>
+      </a>
+      <nav class="jxx-nav" id="jxxNav">
+        <a href="#jxx-top">首页</a>
+        <a href="#jxx-about">品牌解析</a>
+        <a href="#jxx-focus">焦点内容</a>
+        <a href="#jxx-stream">热门视频</a>
+        <a href="#jxx-topics">专题企划</a>
+        <a href="#jxx-creators">创作者</a>
+        <a href="#jxx-news">企业动态</a>
+        <a href="#jxx-faq">帮助</a>
+        <a href="#jxx-contact">联系</a>
+      </nav>
+      <div class="jxx-header-tools">
+        <div class="jxx-search">
+          <input type="search" id="jxxSearchInput" placeholder="搜索视频 / 创作者" aria-label="站内搜索">
+          <button type="button" id="jxxSearchBtn" aria-label="搜索">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+          </button>
+          <div class="jxx-search-feedback" id="jxxSearchFeedback"></div>
+        </div>
+        <button class="jxx-btn jxx-btn-primary" type="button" id="jxxSubmitTop">我要投稿</button>
+        <button class="jxx-burger" type="button" id="jxxBurger" aria-label="展开导航">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="jxx-hero" id="jxx-top">
+  <div class="jxx-wrap jxx-hero-inner">
+    <div class="jxx-hero-copy">
+      <span class="jxx-eyebrow">官方网站 · 原创影像内容生态</span>
+      <h1>jxx.cc最新</h1>
+      <p class="jxx-hero-sub">以真实影像记录时代日常，以匠心内容连接创作者与企业。</p>
+      <p class="jxx-hero-desc">作为深耕视频领域的品牌官网，jxx.cc最新持续运营高品质原创内容社区，为创作者提供稳定的舞台，为品牌提供可信赖的内容表达方式。</p>
+      <div class="jxx-hero-actions">
+        <a class="jxx-btn jxx-btn-amber" href="#jxx-stream">浏览精品内容</a>
+        <a class="jxx-btn jxx-btn-ghost" href="#jxx-creators">认识创作者</a>
+      </div>
+      <div class="jxx-hero-stats">
+        <div class="jxx-hero-stat"><b>12,800+</b><span>原创视频作品</span></div>
+        <div class="jxx-hero-stat"><b>3,200+</b><span>入驻创作者</span></div>
+        <div class="jxx-hero-stat"><b>96.4%</b><span>用户好评口碑</span></div>
+      </div>
+    </div>
+    <div class="jxx-hero-visual">
+      <div class="jxx-hero-frame">
+        <svg viewBox="0 0 640 400" role="img" aria-label="jxx.cc最新品牌主视觉：城市光影与影像创作场景">
+          <defs>
+            <linearGradient id="jxxHeroSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1d4c6b"/><stop offset="1" stop-color="#0d2233"/>
+            </linearGradient>
+            <linearGradient id="jxxHeroGlow" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffcc4d" stop-opacity=".9"/><stop offset="1" stop-color="#f5a623" stop-opacity=".1"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="400" fill="url(#jxxHeroSky)"/>
+          <circle cx="495" cy="112" r="66" fill="url(#jxxHeroGlow)"/>
+          <circle cx="495" cy="112" r="30" fill="#ffe6a3" opacity=".85"/>
+          <g fill="#0a1b28" opacity=".85">
+            <rect x="40" y="196" width="74" height="204"/>
+            <rect x="126" y="158" width="56" height="242"/>
+            <rect x="194" y="222" width="88" height="178"/>
+            <rect x="548" y="176" width="60" height="224"/>
+          </g>
+          <g fill="#153a52">
+            <rect x="292" y="142" width="96" height="258" rx="4"/>
+            <rect x="404" y="206" width="120" height="194" rx="4"/>
+          </g>
+          <g fill="#ffcc4d" opacity=".7">
+            <rect x="54" y="214" width="12" height="12"/><rect x="76" y="214" width="12" height="12"/>
+            <rect x="54" y="238" width="12" height="12"/><rect x="98" y="238" width="12" height="12"/>
+            <rect x="140" y="182" width="11" height="11"/><rect x="160" y="182" width="11" height="11"/>
+            <rect x="308" y="164" width="14" height="14"/><rect x="334" y="164" width="14" height="14"/>
+            <rect x="308" y="194" width="14" height="14"/><rect x="360" y="194" width="14" height="14"/>
+            <rect x="422" y="228" width="13" height="13"/><rect x="452" y="228" width="13" height="13"/>
+            <rect x="482" y="258" width="13" height="13"/><rect x="422" y="258" width="13" height="13"/>
+            <rect x="562" y="198" width="11" height="11"/><rect x="584" y="198" width="11" height="11"/>
+          </g>
+          <g>
+            <rect x="248" y="290" width="184" height="110" rx="8" fill="#0f2b3d" stroke="#ffcc4d" stroke-width="2.5" opacity=".95"/>
+            <circle cx="290" cy="330" r="17" fill="none" stroke="#ffcc4d" stroke-width="2.5"/>
+            <circle cx="290" cy="330" r="7" fill="#ffcc4d"/>
+            <path d="M348 316l34 20-34 20z" fill="#ffcc4d"/>
+            <rect x="262" y="368" width="156" height="6" rx="3" fill="#1d4c6b"/>
+          </g>
+          <path d="M0 384 Q160 356 320 380 T640 372 L640 400 L0 400Z" fill="#081825"/>
+        </svg>
+      </div>
+      <div class="jxx-hero-float">
+        <span class="jxx-pulse"></span>今日新增 <b>36</b> 条原创投稿
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌解析长文 -->
+<section class="jxx-section jxx-about" id="jxx-about">
+  <div class="jxx-wrap jxx-about-grid">
+    <aside class="jxx-about-aside">
+      <h2><small>BRAND INSIGHT</small>关于 jxx.cc最新</h2>
+      <div class="jxx-rule"></div>
+      <p>我们相信，影像不只是观看的入口，更是理解世界与彼此的方式。这里是 jxx.cc最新的官方网站，也是品牌与创作者共同书写的内容生态说明。</p>
+    </aside>
+    <div class="jxx-about-body">
+      <p>jxx.cc最新是一个以原创视频为核心的视频品牌官网，我们把“真实、温暖、有力量”作为内容底色，围绕日常记录、经验分享、人物访谈、创作幕后、城市探索与生活方式等多条内容线持续深耕。作为一个持续运营的内容平台，我们不追求短期的流量喧嚣，而更在意每一个作品是否经得起回看，每一位创作者是否能在社区里被看见、被理解、被长期陪伴。</p>
+      <p>从品牌定位上看，jxx.cc最新既是一个创作者社区，也是一套成熟的内容生产与分发体系。我们为创作者提供选题攻略、剪辑思路、拍摄规范与上传工具，为品牌方提供从企划、拍摄到传播的完整内容服务，为用户提供高清、正版、经过筛选的精品内容。企业级的运营能力与社区式的温度，在这里并不冲突，而是彼此支撑的两面。</p>
+      <h3>内容定位：在垂直领域里做深，而不是做宽</h3>
+      <p>我们选择在“真实影像”这个垂直领域持续投入。所谓真实，并非拒绝艺术加工，而是强调内容与人之间的诚实关系：日常记录可以朴素，但要有细节；深度测评可以专业，但要有立场；人物访谈可以温和，但要有追问。jxx.cc最新希望内容生态中的每一类作品都有自己的位置，让行业观察与情感故事并存，让知识科普与治愈影像共处，让不同年龄、不同背景的用户都能找到愿意停留的那一段影像。</p>
+      <p>基于这样的判断，平台的内容结构被划分为焦点内容、热门视频流、专题企划、创作者矩阵与作品影像墙等多个层次。焦点内容负责呈现品牌最想表达的气质，热门视频流负责保持社区的日常活力，专题企划负责把分散的作品组织成有观点的合集，创作者矩阵则让人的价值被长期看见。这种结构使内容生态既能保持品质，又能保持多元与包容。</p>
+      <h3>创作者生态：长期主义与匠心扶持</h3>
+      <p>在 jxx.cc最新，创作者不是流量的供给端，而是品牌的合作者。我们为新人提供完整的入驻指引与投稿规范，为成熟创作者提供专题企划、品牌合作与线下活动的机会，也为所有创作者提供统一的作品展示页与数据反馈。平台设有创作者成长计划，定期推出拍摄技巧、脚本结构、封面设计等攻略内容，并通过比赛、挑战与投票等形式，鼓励创作者尝试新的表达方式。</p>
+      <p>我们尤其重视创作幕后这一类内容。因为只有让观众看到作品是如何被完成的，才能真正建立对内容品质的信任。因此我们鼓励创作者公开自己的拍摄清单、剪辑思路与失败经验，让创作过程本身也成为一种有价值的内容。这种开放的社区氛围，是 jxx.cc最新区别于普通视频站点的关键，也是我们希望长期维护的行业口碑。</p>
+      <h3>企业服务与社会责任</h3>
+      <p>作为一家有企业背景的视频品牌，jxx.cc最新同时承担着内容服务与社会责任。我们为合作品牌提供定制化的内容企划与影像制作，坚持正版素材与高清交付标准；我们也在社区中持续推动理性表达、尊重原创与友好讨论的规范，对搬运、侵权与不实信息保持零容忍。平台设有举报与反馈入口，所有处理结果都会在官方动态中同步说明。</p>
+      <p>未来，jxx.cc最新将继续在原创内容、创作者扶持与技术工具三条线上投入，尝试更多元的影像表达形式，也期待更多志同道合的人加入进来。无论你是想记录生活的普通用户，还是希望被更多人看见的创作者，抑或是寻找优质内容合作的品牌方，这里都为你保留了一个位置。我们希望成为用户首选的内容社区，也希望这份事业能被时间证明值得信赖。</p>
+      <div class="jxx-about-tags">
+        <span>官方网站</span><span>原创影像</span><span>内容生态</span><span>创作者社区</span>
+        <span>品牌故事</span><span>匠心内容</span><span>持续运营</span><span>用户至上</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点内容 -->
+<section class="jxx-section" id="jxx-focus">
+  <div class="jxx-wrap">
+    <div class="jxx-section-head">
+      <div>
+        <h2><small>FOCUS</small>焦点内容</h2>
+        <p>由编辑部与社区共同选出的本周重点作品，覆盖人物、城市与手作三条内容线。</p>
+      </div>
+      <a class="jxx-link-more" href="#jxx-stream">查看全部 →</a>
+    </div>
+    <div class="jxx-focus-grid">
+      <article class="jxx-card">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 640 360" role="img" aria-label="焦点内容封面：纪录片《街角的光》人物访谈场景">
+            <defs><linearGradient id="jxxFg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b5b78"/><stop offset="1" stop-color="#112e42"/></linearGradient></defs>
+            <rect width="640" height="360" fill="url(#jxxFg1)"/>
+            <circle cx="500" cy="90" r="80" fill="#ffcc4d" opacity=".18"/>
+            <g fill="#0d2233">
+              <circle cx="300" cy="150" r="46"/>
+              <path d="M210 360c0-70 40-118 90-118s90 48 90 118z"/>
+            </g>
+            <g fill="#ffcc4d" opacity=".85">
+              <circle cx="300" cy="150" r="46" fill="none" stroke="#ffcc4d" stroke-width="3"/>
+            </g>
+            <rect x="60" y="70" width="120" height="8" rx="4" fill="#ffcc4d" opacity=".7"/>
+            <rect x="60" y="92" width="80" height="8" rx="4" fill="#ffffff" opacity=".3"/>
+            <g stroke="#3d7395" stroke-width="2" opacity=".6">
+              <path d="M0 300h640"/><path d="M0 320h640"/>
+            </g>
+          </svg>
+          <span class="jxx-badge jxx-badge-amber">品牌纪录片</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>《街角的光》：一间开了二十三年的修表铺与它的老顾客</h3>
+          <p>我们用一整天的镜头记录修表师傅陈叔的工作台，也记录那些把旧表送来的人。时间在这里被拆解成齿轮，也被重新装配成记忆。</p>
+          <div class="jxx-card-meta">
+            <span class="jxx-avatar" style="background:#2b5b78">陈</span>
+            <span>陈默影像</span><span class="jxx-dot"></span><span>18.6万 次播放</span><span class="jxx-dot"></span><span>11-16</span>
+          </div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="2486">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>
+              <span class="jxx-like-num">2,486</span>
+            </button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏
+            </button>
+            <button class="jxx-chip-btn jxx-share-btn" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="6" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.6 10.6l6.8-3.2M8.6 13.4l6.8 3.2"/></svg>分享
+            </button>
+          </div>
+        </div>
+      </article>
+      <div class="jxx-focus-side">
+        <article class="jxx-card">
+          <div class="jxx-thumb">
+            <svg viewBox="0 0 400 225" role="img" aria-label="焦点内容封面：城市探索《凌晨四点的菜市场》">
+              <rect width="400" height="225" fill="#1b3f56"/>
+              <g fill="#ffcc4d" opacity=".16"><circle cx="90" cy="60" r="52"/></g>
+              <g fill="#0d2233">
+                <path d="M0 150h400v75H0z"/>
+                <rect x="40" y="98" width="90" height="52" rx="3"/>
+                <rect x="150" y="82" width="70" height="68" rx="3"/>
+                <rect x="240" y="108" width="110" height="42" rx="3"/>
+              </g>
+              <g fill="#f5a623" opacity=".8">
+                <rect x="52" y="110" width="14" height="9"/><rect x="76" y="110" width="14" height="9"/>
+                <rect x="162" y="94" width="14" height="9"/><rect x="186" y="94" width="14" height="9"/>
+                <rect x="254" y="120" width="14" height="9"/><rect x="284" y="120" width="14" height="9"/>
+              </g>
+              <path d="M0 176 Q100 160 200 176 T400 170" stroke="#3d7395" stroke-width="2" fill="none"/>
+            </svg>
+            <span class="jxx-badge">城市探索</span>
+            <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+          </div>
+          <div class="jxx-card-body">
+            <h3>凌晨四点的菜市场，城市最早醒来的地方</h3>
+            <p>跟随三位摊主，记录一座城市在太阳升起之前真实的呼吸节奏。</p>
+            <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#3d7395">林</span><span>林间笔记</span><span class="jxx-dot"></span><span>9.2万</span></div>
+            <div class="jxx-card-actions">
+              <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="1320"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">1,320</span></button>
+              <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+            </div>
+          </div>
+        </article>
+        <article class="jxx-card">
+          <div class="jxx-thumb">
+            <svg viewBox="0 0 400 225" role="img" aria-label="焦点内容封面：手作DIY《木屑与咖啡的下午》">
+              <rect width="400" height="225" fill="#e8dcc8"/>
+              <rect x="0" y="150" width="400" height="75" fill="#c9b393"/>
+              <g fill="#8a6a45">
+                <rect x="54" y="96" width="120" height="54" rx="4"/>
+                <rect x="196" y="72" width="34" height="78" rx="4"/>
+                <path d="M262 150l40-62 40 62z"/>
+              </g>
+              <circle cx="112" cy="86" r="18" fill="#f5a623" opacity=".8"/>
+              <g stroke="#8a6a45" stroke-width="3" fill="none" opacity=".7">
+                <path d="M300 60c12 10 12 22 0 32"/><path d="M318 54c16 14 16 30 0 44"/>
+              </g>
+            </svg>
+            <span class="jxx-badge">创作幕后</span>
+            <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+          </div>
+          <div class="jxx-card-body">
+            <h3>木屑与咖啡的下午：一件小木器的完整诞生过程</h3>
+            <p>从选料到打磨，记录手作人的耐心与失误，也记录木头的味道。</p>
+            <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#8a6a45">木</span><span>木言手作</span><span class="jxx-dot"></span><span>6.8万</span></div>
+            <div class="jxx-card-actions">
+              <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="986"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">986</span></button>
+              <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section class="jxx-section" id="jxx-stream" style="background:#fff;border-top:1px solid var(--jxx-line);border-bottom:1px solid var(--jxx-line)">
+  <div class="jxx-wrap">
+    <div class="jxx-section-head">
+      <div>
+        <h2><small>TRENDING</small>热门视频流</h2>
+        <p>社区的日常活力来自持续更新的真实内容，这里是本周讨论度最高的九条影像。</p>
+      </div>
+    </div>
+    <div class="jxx-filter-bar" id="jxxFilterBar">
+      <button class="jxx-filter active" type="button" data-filter="all">全部</button>
+      <button class="jxx-filter" type="button" data-filter="生活">生活方式</button>
+      <button class="jxx-filter" type="button" data-filter="知识">知识科普</button>
+      <button class="jxx-filter" type="button" data-filter="访谈">人物访谈</button>
+      <button class="jxx-filter" type="button" data-filter="手作">手作DIY</button>
+    </div>
+    <div class="jxx-stream-grid" id="jxxStreamGrid">
+
+      <article class="jxx-card" data-tag="生活">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：一个人的早餐仪式感">
+            <rect width="400" height="225" fill="#f7e6c8"/>
+            <circle cx="200" cy="120" r="70" fill="#fff"/>
+            <circle cx="200" cy="120" r="44" fill="#f5a623"/>
+            <circle cx="200" cy="120" r="20" fill="#e07b2a"/>
+            <rect x="130" y="196" width="140" height="10" rx="5" fill="#c9a26a"/>
+            <g stroke="#c9a26a" stroke-width="3" fill="none"><path d="M300 60c14 12 14 26 0 38"/></g>
+          </svg>
+          <span class="jxx-badge">生活方式</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>一个人的早餐仪式感：十五分钟做完三样小食</h3>
+          <p>不用复杂工具，也能让清晨变得值得期待。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#e07b2a">早</span><span>早安厨房</span><span class="jxx-dot"></span><span>4.1万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="612"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">612</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="知识">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：三分钟看懂城市排水系统">
+            <rect width="400" height="225" fill="#153a52"/>
+            <g stroke="#4ca8d6" stroke-width="3" fill="none">
+              <path d="M0 60h400"/><path d="M0 100h400"/><path d="M0 140h400"/>
+            </g>
+            <g fill="none" stroke="#ffcc4d" stroke-width="3">
+              <circle cx="120" cy="100" r="26"/><rect x="220" y="74" width="52" height="52" rx="6"/>
+              <path d="M300 126l24-52 24 52z"/>
+            </g>
+            <g fill="#4ca8d6" opacity=".6"><circle cx="200" cy="180" r="6"/><circle cx="240" cy="180" r="6"/><circle cx="280" cy="180" r="6"/></g>
+          </svg>
+          <span class="jxx-badge">知识科普</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>三分钟看懂城市排水系统，雨天不再只是抱怨</h3>
+          <p>用动画拆解一场暴雨背后，城市基础设施的运转逻辑。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#4ca8d6">知</span><span>知识放大镜</span><span class="jxx-dot"></span><span>7.6万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="1884"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">1,884</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="访谈">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：独立书店店主的一天访谈">
+            <rect width="400" height="225" fill="#3a2f3f"/>
+            <g fill="#5b4a63"><rect x="20" y="30" width="90" height="160" rx="4"/><rect x="120" y="60" width="70" height="130" rx="4"/></g>
+            <g fill="#ffcc4d" opacity=".8">
+              <rect x="30" y="46" width="16" height="30"/><rect x="52" y="46" width="16" height="30"/><rect x="74" y="76" width="16" height="30"/>
+              <rect x="130" y="76" width="16" height="30"/><rect x="152" y="76" width="16" height="30"/>
+            </g>
+            <circle cx="290" cy="100" r="42" fill="#e8dcc8"/>
+            <path d="M232 225c0-48 26-80 58-80s58 32 58 80z" fill="#e8dcc8"/>
+            <rect x="278" y="86" width="24" height="8" rx="4" fill="#3a2f3f"/>
+          </svg>
+          <span class="jxx-badge">人物访谈</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>守着一家书店第十年：她把生意过成了生活</h3>
+          <p>关于坚持、亏损与重新开始，一次没有脚本的深度对谈。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#5b4a63">对</span><span>对话现场</span><span class="jxx-dot"></span><span>5.3万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="1102"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">1,102</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="手作">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：旧毛衣改造成收纳袋的手作过程">
+            <rect width="400" height="225" fill="#d9e8dd"/>
+            <path d="M60 60h280v105H60z" fill="#a8c8b0"/>
+            <g stroke="#4f8a63" stroke-width="3" fill="none" stroke-dasharray="7 6">
+              <path d="M90 60v105"/><path d="M310 60v105"/><path d="M60 165h280"/>
+            </g>
+            <circle cx="200" cy="112" r="26" fill="none" stroke="#4f8a63" stroke-width="3"/>
+            <path d="M188 112l8 8 18-18" stroke="#4f8a63" stroke-width="4" fill="none"/>
+          </svg>
+          <span class="jxx-badge">手作DIY</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>旧毛衣别扔：三步改造成实用收纳袋</h3>
+          <p>零基础可上手，材料成本几乎为零的环保小改造。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#4f8a63">布</span><span>布言布语</span><span class="jxx-dot"></span><span>3.7万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="745"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">745</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="生活">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：露营夜里的一顿热汤">
+            <rect width="400" height="225" fill="#122a3a"/>
+            <circle cx="320" cy="52" r="24" fill="#ffcc4d" opacity=".85"/>
+            <path d="M0 160l70-62 66 62 60-46 72 58 62-50 70 54V225H0z" fill="#0b1e2b"/>
+            <path d="M154 196l46-70 46 70z" fill="#e07b2a"/>
+            <path d="M178 196l22-38 22 38z" fill="#ffcc4d"/>
+            <g stroke="#3d7395" stroke-width="2" opacity=".5"><path d="M20 210h360"/></g>
+          </svg>
+          <span class="jxx-badge">户外活动</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>零下三度露营，一锅热汤救了我们整晚</h3>
+          <p>装备清单、生火技巧与一次失败的帐篷搭法复盘。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#3d7395">野</span><span>野行记录</span><span class="jxx-dot"></span><span>8.9万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="2205"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">2,205</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="知识">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：手机拍摄的三个构图误区">
+            <rect width="400" height="225" fill="#1f2a3a"/>
+            <g fill="#ffcc4d" opacity=".2"><rect x="200" y="0" width="200" height="225"/></g>
+            <rect x="150" y="42" width="100" height="150" rx="12" fill="#0d1622" stroke="#4ca8d6" stroke-width="3"/>
+            <g stroke="#ffcc4d" stroke-width="2" opacity=".85">
+              <path d="M150 79h100M150 116h100M150 153h100M183 42v150M216 42v150"/>
+            </g>
+            <circle cx="200" cy="116" r="14" fill="none" stroke="#ffcc4d" stroke-width="3"/>
+            <g fill="#4ca8d6"><circle cx="60" cy="60" r="8"/><circle cx="60" cy="112" r="8"/><circle cx="60" cy="164" r="8"/><circle cx="340" cy="60" r="8"/><circle cx="340" cy="112" r="8"/></g>
+          </svg>
+          <span class="jxx-badge">实用技巧</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>手机拍摄的三个构图误区，改掉画面立刻不一样</h3>
+          <p>用实拍对比演示三分法之外，更实用的画面组织思路。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#4ca8d6">拍</span><span>拍片笔记</span><span class="jxx-dot"></span><span>6.2万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="1567"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">1,567</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="生活">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：周末整理书桌的收纳思路">
+            <rect width="400" height="225" fill="#eee6d6"/>
+            <rect x="0" y="150" width="400" height="75" fill="#c9b393"/>
+            <g fill="#8a6a45"><rect x="40" y="70" width="80" height="80" rx="4"/><rect x="140" y="100" width="60" height="50" rx="4"/></g>
+            <g fill="#e8dcc8"><rect x="48" y="78" width="16" height="64"/><rect x="72" y="78" width="16" height="64"/><rect x="96" y="78" width="16" height="64"/></g>
+            <g stroke="#8a6a45" stroke-width="3" fill="none"><path d="M240 150V70h92v80"/><path d="M256 70V46h60v24"/></g>
+            <circle cx="286" cy="118" r="18" fill="#f5a623" opacity=".85"/>
+          </svg>
+          <span class="jxx-badge">家居收纳</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>周末两小时整理书桌，桌面清爽整整一周</h3>
+          <p>从分区到断舍离，一套普通人能坚持的桌面整理法。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#8a6a45">收</span><span>收纳小事</span><span class="jxx-dot"></span><span>4.8万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="893"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">893</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="访谈">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：独立音乐人访谈与现场片段">
+            <rect width="400" height="225" fill="#2a1f3d"/>
+            <circle cx="200" cy="112" r="66" fill="none" stroke="#b58cff" stroke-width="3" opacity=".7"/>
+            <g fill="#b58cff" opacity=".85">
+              <rect x="176" y="82" width="14" height="60" rx="4"/>
+              <rect x="196" y="60" width="14" height="82" rx="4"/>
+              <rect x="216" y="74" width="14" height="68" rx="4"/>
+            </g>
+            <g stroke="#ffcc4d" stroke-width="2" opacity=".6" fill="none">
+              <path d="M60 60c20 16 20 40 0 56"/><path d="M340 60c-20 16-20 40 0 56"/>
+            </g>
+            <circle cx="90" cy="180" r="6" fill="#b58cff"/><circle cx="118" cy="180" r="6" fill="#b58cff" opacity=".6"/>
+          </svg>
+          <span class="jxx-badge">音乐现场</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>在地下排练室写下第一张专辑：对话独立乐队「回声」</h3>
+          <p>关于排练、分歧与一个和弦的坚持，附带三段现场片段。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#7a5bb5">回</span><span>声音研究所</span><span class="jxx-dot"></span><span>5.9万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="1978"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">1,978</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="jxx-card" data-tag="手作">
+        <div class="jxx-thumb">
+          <svg viewBox="0 0 400 225" role="img" aria-label="视频封面：陶艺拉坯的第一次失败记录">
+            <rect width="400" height="225" fill="#e6d5c3"/>
+            <ellipse cx="200" cy="186" rx="130" ry="20" fill="#c9a98c"/>
+            <path d="M150 180c0-36 18-64 50-64s50 28 50 64z" fill="#a8764a"/>
+            <ellipse cx="200" cy="118" rx="26" ry="10" fill="#8a5a33"/>
+            <g stroke="#c9a98c" stroke-width="3" fill="none" opacity=".8">
+              <path d="M56 80c18-14 36-14 54 0"/><path d="M290 60c16-12 32-12 48 0"/>
+            </g>
+            <circle cx="200" cy="60" r="14" fill="#f5a623" opacity=".55"/>
+          </svg>
+          <span class="jxx-badge">手作DIY</span>
+          <div class="jxx-play"><span class="jxx-play-btn"><svg viewBox="0 0 24 24" fill="#0f2b3d"><path d="M8 5l12 7-12 7z"/></svg></span></div>
+        </div>
+        <div class="jxx-card-body">
+          <h3>陶艺拉坯第一次就塌了，但我拍下了全过程</h3>
+          <p>失败也值得记录，这是一份给新手的踩坑记录与复盘。</p>
+          <div class="jxx-card-meta"><span class="jxx-avatar" style="background:#a8764a">陶</span><span>陶土日记</span><span class="jxx-dot"></span><span>3.2万</span></div>
+          <div class="jxx-card-actions">
+            <button class="jxx-chip-btn jxx-like-btn" type="button" data-count="534"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 7a4 4 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg><span class="jxx-like-num">534</span></button>
+            <button class="jxx-chip-btn jxx-save-btn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 4h12v17l-6-4-6 4z"/></svg>收藏</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="jxx-section" id="jxx-topics">
+  <div class="jxx-wrap">
+    <div class="jxx-section-head">
+      <div>
+        <h2><small>SERIES</small>专题企划</h2>
+        <p>把零散的作品组织成有观点的合集，是平台对内容生态的长期投入。</p>
+      </div>
+      <a class="jxx-link-more" href="#jxx-contact">合作企划 →</a>
+    </div>
+    <div class="jxx-topic-grid">
+
+      <article class="jxx-topic">
+        <div class="jxx-topic-cover">
+          <svg viewBox="0 0 300 190" role="img" aria-label="专题封面：城市暖流冬季影像企划">
+            <rect width="300" height="190" fill="#153a52"/>
+            <circle cx="228" cy="46" r="30" fill="#ffcc4d" opacity=".8"/>
+            <path d="M0 130l60-46 52 44 50-30 58 40 40-28 40 30V190H0z" fill="#0d2233"/>
+            <g fill="#f5a623" opacity=".9"><rect x="120" y="112" width="14" height="20"/><rect x="146" y="104" width="14" height="28"/><rect x="172" y="116" width="14" height="16"/></g>
+            <rect x="20" y="24" width="70" height="7" rx="3" fill="#ffcc4d" opacity=".7"/>
+          </svg>
+          <span class="jxx-topic-status live">征集中</span>
+        </div>
+        <div class="jxx-topic-body">
+          <h3>城市暖流 · 冬季影像企划</h3>
+          <p>记录寒冷季节里那些让人感到温暖的瞬间，可以是人，也可以是场景。</p>
+          <div class="jxx-topic-foot">已收录 142 条 · 报名开放</div>
+        </div>
+      </article>
+
+      <article class="jxx-topic">
+        <div class="jxx-topic-cover">
+          <svg viewBox="0 0 300 190" role="img" aria-label="专题封面：一间店的一年系列">
+            <rect width="300" height="190" fill="#e8dcc8"/>
+            <rect x="0" y="120" width="300" height="70" fill="#c9b393"/>
+            <g fill="#8a6a45"><rect x="40" y="52" width="80" height="68" rx="4"/><rect x="142" y="70" width="54" height="50" rx="4"/><rect x="212" y="60" width="60" height="60" rx="4"/></g>
+            <g fill="#f5a623" opacity=".8"><rect x="52" y="66" width="16" height="12"/><rect x="78" y="66" width="16" height="12"/><rect x="152" y="82" width="14" height="10"/><rect x="224" y="74" width="14" height="10"/></g>
+            <circle cx="250" cy="40" r="16" fill="#e07b2a" opacity=".7"/>
+          </svg>
+          <span class="jxx-topic-status">更新至第 8 集</span>
+        </div>
+        <div class="jxx-topic-body">
+          <h3>一间店的一年 · 小店生存记录</h3>
+          <p>跟随六家街边小店走过四季，记录生意背后的选择与坚持。</p>
+          <div class="jxx-topic-foot">已更新 8 集 · 每月更新</div>
+        </div>
+      </article>
+
+      <article class="jxx-topic">
+        <div class="jxx-topic-cover">
+          <svg viewBox="0 0 300 190" role="img" aria-label="专题封面：新手创作者成长计划">
+            <rect width="300" height="190" fill="#1f2a3a"/>
+            <g stroke="#4ca8d6" stroke-width="3" fill="none"><path d="M40 150h220"/><path d="M70 150V90"/><path d="M130 150V62"/><path d="M190 150V104"/><path d="M250 150V44"/></g>
+            <g fill="#ffcc4d"><circle cx="70" cy="90" r="6"/><circle cx="130" cy="62" r="6"/><circle cx="190" cy="104" r="6"/><circle cx="250" cy="44" r="7"/></g>
+            <path d="M250 44l-14 6 6 4z" fill="#ffcc4d"/>
+          </svg>
+          <span class="jxx-topic-status">长期企划</span>
+        </div>
+        <div class="jxx-topic-body">
+          <h3>新手创作者成长计划</h3>
+          <p>从拍摄到剪辑的系统攻略，配套训练任务与作品点评机制。</p>
+          <div class="jxx-topic-foot">第 3 期开放报名</div>
+        </div>
+      </article>
+
+      <article class="jxx-topic">
+        <div class="jxx-topic-cover">
+          <svg viewBox="0 0 300 190" role="img" aria-label="专题封面：手作的温度匠人系列">
+            <rect width="300" height="190" fill="#d9e8dd"/>
+            <circle cx="150" cy="96" r="52" fill="none" stroke="#4f8a63" stroke-width="3"/>
+            <g stroke="#4f8a63" stroke-width="3" fill="none">
+              <path d="M118 96h64M150 64v64"/><circle cx="150" cy="96" r="14"/>
+            </g>
+            <g fill="#8a6a45"><rect x="30" y="140" width="60" height="30" rx="3"/><rect x="210" y="140" width="60" height="30" rx="3"/></g>
+          </svg>
+          <span class="jxx-topic-status">已完结</span>
+        </div>
+        <div class="jxx-topic-body">
+          <h3>手作的温度 · 十二位匠人</h3>
+          <p>走访十二间工作室，记录手艺人的工作节奏与生活哲学。</p>
+          <div class="jxx-topic-foot">全 12 集 · 精品内容</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="jxx-section jxx-creators" id="jxx-creators">
+  <div class="jxx-wrap">
+    <div class="jxx-section-head">
+      <div>
+        <h2><small>CREATORS</small>创作者矩阵</h2>
+        <p>人是内容生态的核心。以下创作者长期在平台持续发布原创作品，拥有稳定口碑。</p>
+      </div>
+    </div>
+    <div class="jxx-creator-grid">
+      <article class="jxx-creator">
+        <div class="jxx-creator-top">
+          <span class="jxx-creator-avatar" style="background:#3d7395">陈</span>
+          <div><h3>陈默影像</h3><span>人物访谈 · 城市探索</span></div>
+        </div>
+        <p>前纪录片摄影助理，擅长用长镜头记录普通人的工作现场，作品节奏克制、细节丰富。</p>
+        <div class="jxx-creator-stats"><div><b>86</b><span>作品</span></div><div><b>12.4万</b><span>粉丝</span></div></div>
+        <button class="jxx-creator-btn jxx-author-btn" type="button" data-name="陈默影像" data-field="人物访谈 · 城市探索" data-desc="前纪录片摄影助理，擅长用长镜头记录普通人的工作现场。代表作《街角的光》《码头十二小时》。">查看创作者</button>
+      </article>
+      <article class="jxx-creator">
+        <div class="jxx-creator-top">
+          <span class="jxx-creator-avatar" style="background:#4ca8d6">知</span>
+          <div><h3>知识放大镜</h3><span>知识科普 · 行业观察</span></div>
+        </div>
+        <p>三人小团队，专注用动画与实拍解释生活中看不见的系统与规则，内容严谨但不枯燥。</p>
+        <div class="jxx-creator-stats"><div><b>54</b><span>作品</span></div><div><b>9.8万</b><span>粉丝</span></div></div>
+        <button class="jxx-creator-btn jxx-author-btn" type="button" data-name="知识放大镜" data-field="知识科普 · 行业观察" data-desc="三人小团队，专注用动画与实拍解释生活中看不见的系统与规则，代表专题《城市运转的秘密》。">查看创作者</button>
+      </article>
+      <article class="jxx-creator">
+        <div class="jxx-creator-top">
+          <span class="jxx-creator-avatar" style="background:#8a6a45">木</span>
+          <div><h3>木言手作</h3><span>手作DIY · 创作幕后</span></div>
+        </div>
+        <p>木工与布艺双线创作者，坚持公开完整制作过程，包括失败与返工，社区反馈极好。</p>
+        <div class="jxx-creator-stats"><div><b>121</b><span>作品</span></div><div><b>15.1万</b><span>粉丝</span></div></div>
+        <button class="jxx-creator-btn jxx-author-btn" type="button" data-name="木言手作" data-field="手作DIY · 创作幕后" data-desc="木工与布艺双线创作者，坚持公开完整制作过程，包括失败与返工，系列作品《从一块木头开始》。">查看创作者</button>
+      </article>
+      <article class="jxx-creator">
+        <div class="jxx-creator-top">
+          <span class="jxx-creator-avatar" style="background:#7a5bb5">回</span>
+          <div><h3>声音研究所</h3><span>音乐现场 · 文化访谈</span></div>
+        </div>
+        <p>关注独立音乐与声音创作，常驻排练室与小型现场，记录音乐发生之前的漫长准备。</p>
+        <div class="jxx-creator-stats"><div><b>63</b><span>作品</span></div><div><b>7.6万</b><span>粉丝</span></div></div>
+        <button class="jxx-creator-btn jxx-author-btn" type="button" data-name="声音研究所" data-field="音乐现场 · 文化访谈" data-desc="关注独立音乐与声音创作，常驻排练室与小型现场，代表企划《第一张专辑》。">查看创作者</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="jxx-section">
+  <div class="jxx-wrap">
+    <div class="jxx-section-head">
+      <div>
+        <h2><small>VOICES</small>用户评价</h2>
+        <p>来自创作者、观众与合作方的真实反馈，是平台口碑最直接的来源。</p>
+      </div>
+    </div>
+    <div class="jxx-review-grid">
+      <article class="jxx-review">
+        <div class="jxx-review-stars">★★★★★</div>
+        <p>做视频三年，换过两个平台，最后留在 jxx.cc最新。原因很朴素：这里的审核反馈会告诉你具体哪里需要改，而不是一句“不符合规范”。</p>
+        <div class="jxx-review-foot"><span class="jxx-avatar" style="background:#3d7395">阿</span><div><h4>阿泽拍片</h4><span>创作者 · 入驻 2 年</span></div></div>
+      </article>
+      <article class="jxx-review">
+        <div class="jxx-review-stars">★★★★★</div>
+        <p>我是纯观众，不太会发内容。最喜欢的是专题企划，一次能看完一个主题的好几条片子，比自己在信息流里瞎刷有效率多了。</p>
+        <div class="jxx-review-foot"><span class="jxx-avatar" style="background:#e07b2a">林</span><div><h4>林小满</h4><span>用户 · 观看 1 年</span></div></div>
+      </article>
+      <article class="jxx-review">
+        <div class="jxx-review-stars">★★★★☆</div>
+        <p>合作过一次品牌短片，从脚本到成片沟通都挺顺，交付是高清正版素材。扣一星是因为档期有点紧，希望之后能多留些准备时间。</p>
+        <div class="jxx-review-foot"><span class="jxx-avatar" style="background:#4f8a63">周</span><div><h4>周先生</h4><span>品牌合作方</span></div></div>
+      </article>
+      <article class="jxx-review">
+        <div class="jxx-review-stars">★★★★★</div>
+        <p>新手成长计划里的剪辑攻略真的很实用，我照着练了两个月，第一条片子播放量破万。社区管理也挺友好，没有被莫名限流。</p>
+        <div class="jxx-review-foot"><span class="jxx-avatar" style="background:#7a5bb5">橙</span><div><h4>橙子不熬夜</h4><span>创作者 · 新人</span></div></div>
+      </article>
+      <article class="jxx-review">
+        <div class="jxx-review-stars">★★★★★</div>
+        <p>喜欢这种不太吵闹的界面，视频卡片的标题和作者信息都很清楚，找内容不费劲。希望收藏夹能再增加几个分组。</p>
+        <div class="jxx-review-foot"><span class="jxx-avatar" style="background:#8a6a45">木</span><div><h4>木木的周末</h4><span>用户 · 观看 8 个月</span></div></div>
+      </article>
+      <article class="jxx-review">
+        <div class="jxx-review-stars">★★★★☆</div>
+        <p>人物访谈这一块是平台的强项，提问不敷衍，受访者也都愿意讲真话。如果每期能附上完整文字稿就更好了。</p>
+        <div class="jxx-review-foot"><span class="jxx-avatar" style="background:#4ca8d6">夜</span><div><h4>夜航船</h4><span>深度内容用户</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 + FAQ -->
+<section class="jxx-section" id="jxx-news" style="background:#fff;border-top:1px solid var(--jxx-line);border-bottom:1px solid var(--jxx-line)">
+  <div class="jxx-wrap jxx-bottom-grid">
+    <div>
+      <div class="jxx-section-head" style="margin-bottom:26px">
+        <div>
+          <h2><small>UPDATES</small>企业动态</h2>
+          <p>官方发布的内容更新、企划进展与社区规则说明。</p>
+        </div>
+      </div>
+      <div class="jxx-timeline">
+        <div class="jxx-timeline-item">
+          <time>2026-11-19</time>
+          <h3>冬季影像企划《城市暖流》开放报名</h3>
+          <p>面向全部创作者征集 3 分钟以内的原创短片，主题为寒冷季节中的温暖瞬间，截止至 12 月 20 日。</p>
+        </div>
+        <div class="jxx-timeline-item">
+          <time>2026-11-17</time>
+          <h3>创作者扶持计划第三期上线</h3>
+          <p>新增剪辑节奏、封面设计与选题规划三类攻略内容，并配套训练任务与作品点评。</p>
+        </div>
+        <div class="jxx-timeline-item">
+          <time>2026-11-14</time>
+          <h3>品牌短片《手作的力量》官方正版上线</h3>
+          <p>平台自制品牌纪录片，走访三间手作工作室，呈现匠心内容背后的长期主义。</p>
+        </div>
+        <div class="jxx-timeline-item">
+          <time>2026-11-08</time>
+          <h3>社区规范更新：明确原创与转载标注要求</h3>
+          <p>新增转载授权说明与举报处理流程，进一步保护原创作者的合法权益。</p>
+        </div>
+      </div>
+    </div>
+    <div id="jxx-faq">
+      <div class="jxx-section-head" style="margin-bottom:26px">
+        <div>
+          <h2><small>FAQ</small>常见问题</h2>
+          <p>关于入驻、投稿、版权与合作的常见疑问，点击展开查看。</p>
+        </div>
+      </div>
+      <details class="jxx-faq-item" open>
+        <summary>如何成为 jxx.cc最新的创作者？</summary>
+        <div class="jxx-faq-body">点击页面中的“我要投稿”入口，填写基本信息并提交第一条作品即可。审核通常在三个工作日内完成，结果会通过站内消息告知。</div>
+      </details>
+      <details class="jxx-faq-item">
+        <summary>投稿对视频时长和格式有要求吗？</summary>
+        <div class="jxx-faq-body">建议时长在 1 至 15 分钟之间，分辨率不低于 1080P，格式支持 MP4 与 MOV。专题企划类内容会有单独的时长说明，请以企划页面为准。</div>
+      </details>
+      <details class="jxx-faq-item">
+        <summary>平台如何保护原创内容？</summary>
+        <div class="jxx-faq-body">所有作品在发布时都会记录时间戳，平台对搬运与未授权转载保持零容忍。创作者可在作品页发起举报，我们会在核实后进行处理并在官方动态中说明。</div>
+      </details>
+      <details class="jxx-faq-item">
+        <summary>可以在平台下载视频素材吗？</summary>
+        <div class="jxx-faq-body">平台提供的素材仅限官方发布的授权素材包，需在创作中心申请后下载使用。他人作品的下载需获得作者明确授权，请勿擅自使用。</div>
+      </details>
+      <details class="jxx-faq-item">
+        <summary>品牌方如何发起内容合作？</summary>
+        <div class="jxx-faq-body">可通过页面底部的合作联系邮箱提交需求简报，我们在评估内容方向与档期后会安排对接。合作内容会明确标注品牌信息，保持内容真实性。</div>
+      </details>
+      <details class="jxx-faq-item">
+        <summary>参与比赛和挑战有什么奖励？</summary>
+        <div class="jxx-faq-body">平台定期举办主题比赛与创意挑战，入选作品会获得专题推荐位、创作扶持金以及与品牌合作的机会，具体规则以每期活动页面为准。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 合作品牌 + 投稿 CTA -->
+<section class="jxx-section" id="jxx-contact">
+  <div class="jxx-wrap">
+    <div class="jxx-section-head">
+      <div>
+        <h2><small>PARTNERS</small>合作品牌</h2>
+        <p>我们与不同领域的品牌保持长期内容合作，共同推动原创影像的品质标准。</p>
+      </div>
+    </div>
+    <div class="jxx-partner-row">
+      <div class="jxx-partner">青野影像<small>器材支持伙伴</small></div>
+      <div class="jxx-partner">拾光书房<small>线下展映空间</small></div>
+      <div class="jxx-partner">南岸咖啡<small>企划联合出品</small></div>
+      <div class="jxx-partner">木石工坊<small>手作内容合作</small></div>
+      <div class="jxx-partner">回声唱片<small>音乐现场支持</small></div>
+      <div class="jxx-partner">微光公益<small>社会责任合作</small></div>
+    </div>
+    <div class="jxx-cta-band" style="margin-top:44px">
+      <div>
+        <h2>把你的故事交给镜头</h2>
+        <p>无论是一段日常记录，还是一次完整的企划，jxx.cc最新都欢迎你的加入。投稿通道长期开放，官方审核团队会认真看完每一条作品。</p>
+      </div>
+      <div class="jxx-cta-actions">
+        <button class="jxx-btn jxx-btn-amber" type="button" id="jxxSubmitMain">立即投稿</button>
+        <button class="jxx-btn jxx-btn-ghost" type="button" id="jxxCopyLink">复制本页链接</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="jxx-footer">
+  <div class="jxx-wrap">
+    <div class="jxx-footer-grid">
+      <div>
+        <div class="jxx-footer-logo">
+          <span class="jxx-logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5l12 7-12 7z" fill="#ffcc4d"/></svg></span>
+          jxx.cc最新
+        </div>
+        <p>jxx.cc最新官方网站，专注原创视频内容与创作者社区。我们深耕影像垂直领域，以匠心与创新持续运营高品质内容生态，致力于成为用户首选、值得信赖的视频品牌平台。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#jxx-focus">焦点内容</a></li>
+          <li><a href="#jxx-stream">热门视频</a></li>
+          <li><a href="#jxx-topics">专题企划</a></li>
+          <li><a href="#jxx-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#jxx-about">品牌解析</a></li>
+          <li><a href="#jxx-news">企业动态</a></li>
+          <li><a href="#jxx-faq">帮助中心</a></li>
+          <li><a href="#jxx-contact">合作联系</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>合作邮箱：partner@jxxcc.example</li>
+          <li>内容反馈：support@jxxcc.example</li>
+          <li>工作时间：周一至周五 10:00-18:00</li>
+          <li>办公地址：城市创意园 3 号楼 2 层</li>
+        </ul>
+      </div>
+    </div>
+    <div class="jxx-footer-bottom">
+      <span>© 2026 jxx.cc最新 官方网站 · 版权所有 · 持续运营中</span>
+      <span>原创内容 · 正版高清 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 通用弹窗 -->
+<div class="jxx-modal-mask" id="jxxModalMask">
+  <div class="jxx-modal" id="jxxModalBox" role="dialog" aria-modal="true"></div>
+</div>
+<div class="jxx-toast" id="jxxToast"></div>
+<button class="jxx-top-btn" id="jxxTopBtn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===== 工具：Toast ===== */
+  var toastEl = document.getElementById('jxxToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('on'); }, 2200);
+  }
+
+  /* ===== 移动端导航折叠 ===== */
+  var burger = document.getElementById('jxxBurger');
+  var nav = document.getElementById('jxxNav');
+  burger.addEventListener('click', function(){
+    nav.classList.toggle('open');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('open'); }
+  });
+
+  /* ===== 搜索反馈 ===== */
+  var searchInput = document.getElementById('jxxSearchInput');
+  var searchBtn = document.getElementById('jxxSearchBtn');
+  var searchFb = document.getElementById('jxxSearchFeedback');
+  function doSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      searchFb.innerHTML = '请输入关键词，例如「手作」「城市」「访谈」。';
+      searchFb.classList.add('on');
+      return;
+    }
+    var pool = ['城市暖流 冬季影像企划','街角的光 纪录片','木屑与咖啡的下午','手机拍摄构图误区','陶艺拉坯失败记录'];
+    var hits = pool.filter(function(t){ return t.indexOf(kw) > -1; });
+    if(hits.length === 0){ hits = pool.slice(0,3); }
+    searchFb.innerHTML = '围绕 <strong>' + kw.replace(/[<>&]/g,'') + '</strong> 找到 ' + hits.length + ' 条相关内容：<br>' + hits.map(function(h){ return '· ' + h; }).join('<br>');
+    searchFb.classList.add('on');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ doSearch(); } });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){ searchFb.classList.remove('on'); }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.jxx-search')){ searchFb.classList.remove('on'); }
+  });
+
+  /* ===== 点赞 / 收藏 ===== */
+  document.querySelectorAll('.jxx-like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var numEl = btn.querySelector('.jxx-like-num');
+      var base = parseInt(btn.getAttribute('data-count'), 10) || 0;
+      var liked = btn.classList.toggle('liked');
+      var cur = liked ? base + 1 : base;
+      numEl.textContent = cur.toLocaleString('en-US');
+      showToast(liked ? '已点赞' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('.jxx-save-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('saved');
+      showToast(saved ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* ===== 通用弹窗 ===== */
+  var mask = document.getElementById('jxxModalMask');
+  var box = document.getElementById('jxxModalBox');
+  function openModal(html){
+    box.innerHTML = html;
+    mask.classList.add('on');
+  }
+  function closeModal(){ mask.classList.remove('on'); }
+  mask.addEventListener('click', function(e){ if(e.target === mask){ closeModal(); } });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+  box.addEventListener('click', function(e){
+    if(e.target.closest('[data-close]')){ closeModal(); }
+    var submit = e.target.closest('#jxxModalSubmit');
+    if(submit){
+      var ta = box.querySelector('#jxxModalText');
+      if(ta && !ta.value.trim()){ showToast('请先填写内容'); return; }
+      closeModal();
+      showToast('提交成功，官方团队会尽快处理');
+    }
+  });
+
+  /* ===== 创作者信息弹窗 ===== */
+  document.querySelectorAll('.jxx-author-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-name');
+      var field = btn.getAttribute('data-field');
+      var desc = btn.getAttribute('data-desc');
+      openModal(
+        '<h3>' + name + '</h3>' +
+        '<p>擅长领域：' + field + '<br>' + desc + '</p>' +
+        '<div class="jxx-modal-actions">' +
+        '<button class="jxx-btn jxx-btn-amber" type="button" data-close>知道了</button>' +
+        '</div>'
+      );
+    });
+  });
+
+  /* ===== 投稿弹窗 ===== */
+  function openSubmit(){
+    openModal(
+      '<h3>投稿入口</h3>' +
+      '<p>请简要描述你的作品主题与形式，官方审核团队会在三个工作日内回复。</p>' +
+      '<textarea class="jxx-input" id="jxxModalText" rows="4" placeholder="例如：3 分钟城市探索短片，记录凌晨的菜市场"></textarea>' +
+      '<div class="jxx-modal-actions">' +
+      '<button class="jxx-btn jxx-btn-ghost" style="border-color:#dde6ec;color:#5c7182" type="button" data-close>取消</button>' +
+      '<button class="jxx-btn jxx-btn-primary" type="button" id="jxxModalSubmit">提交作品</button>' +
+      '</div>'
+    );
+  }
+  document.getElementById('jxxSubmitTop').addEventListener('click', openSubmit);
+  document.getElementById('jxxSubmitMain').addEventListener('click', openSubmit);
+
+  /* ===== 分享 ===== */
+  document.querySelectorAll('.jxx-share-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal(
+        '<h3>分享这个作品</h3>' +
+        '<p>可在微信、微博等平台分享给朋友，或复制链接后手动发送。</p>' +
+        '<div class="jxx-modal-actions">' +
+        '<button class="jxx-btn jxx-btn-ghost" style="border-color:#dde6ec;color:#5c7182" type="button" data-close>关闭</button>' +
+        '<button class="jxx-btn jxx-btn-amber" type="button" id="jxxModalCopy">复制链接</button>' +
+        '</div>'
+      );
+      var copyBtn = box.querySelector('#jxxModalCopy');
+      if(copyBtn){
+        copyBtn.addEventListener('click', function(){
+          copyText('jxx.cc最新 · 《街角的光》纪录片');
+          closeModal();
+        });
+      }
+    });
+  });
+
+  /* ===== 复制链接 ===== */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('链接已复制到剪贴板');
+      }).catch(function(){
+        showToast('复制成功：' + text);
+      });
+    }else{
+      showToast('复制成功：' + text);
+    }
+  }
+  document.getElementById('jxxCopyLink').addEventListener('click', function(){
+    copyText('jxx.cc最新 - 原创影像内容生态');
+  });
+
+  /* ===== 标签筛选 ===== */
+  var filterBar = document.getElementById('jxxFilterBar');
+  var streamCards = document.querySelectorAll('#jxxStreamGrid > .jxx-card');
+  filterBar.addEventListener('click', function(e){
+    var btn = e.target.closest('.jxx-filter');
+    if(!btn){ return; }
+    filterBar.querySelectorAll('.jxx-filter').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var tag = btn.getAttribute('data-filter');
+    var shown = 0;
+    streamCards.forEach(function(card){
+      var match = (tag === 'all') || (card.getAttribute('data-tag') === tag);
+      card.style.display = match ? '' : 'none';
+      if(match){ shown++; }
+    });
+    if(tag !== 'all'){ showToast('已筛选出 ' + shown + ' 条内容'); }
+  });
+
+  /* ===== 回到顶部 ===== */
+  var topBtn = document.getElementById('jxxTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 420){ topBtn.classList.add('on'); }
+    else{ topBtn.classList.remove('on'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+})();
+</script>
+</body>
+  </html>
